@@ -1,0 +1,42 @@
+.j-wrapper{
+    height: 22.1rem;
+    margin-top: 2rem;
+    background-color: #7103B6;
+    /* height: 22.1rem; */
+}
+.j-left{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+
+.j-text{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    word-spacing: 0.5rem;
+}
+.j-btn{
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: 500;
+    padding: 0.8rem 1rem;
+    color: #7103B6;
+}
+
+@media (max-width: 768px){
+    .j-left{
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .j-right{
+        margin-left: 1.5rem;
+    }
+    .j-btn{
+        margin-bottom: 2rem;
+    }
+    .j-wrapper{
+        height: 34.5rem;
+    }
+}

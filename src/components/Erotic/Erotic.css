@@ -1,0 +1,44 @@
+.t-right{
+    margin-top: 1rem;
+}
+
+.t-left{
+    margin-top: 2rem;
+}
+
+.modal-title{
+    color: #7103B6;
+    font-weight: 700;
+}
+.modal-body{
+    margin-bottom: 3rem;
+}
+.small-f{
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.modal-footer{
+    margin-top: -3rem !important;
+    justify-content: center !important;
+}
+.join{
+    background-color: #7103B6 !important;
+    color: white !important;
+    padding: 0.8rem 2rem !important;
+}
+form{
+    margin-left: 0.5rem !important;
+    width: 95% !important;
+}
+.letter{
+    margin-top: -2.5rem !important;
+    font-size: 0.8rem;
+    margin-bottom: 3rem !important;
+    padding: 0.6rem 1rem !important;
+}
+
+@media (max-width: 768px) {
+    .t-right{
+        padding-top: 2rem;
+    }
+}
