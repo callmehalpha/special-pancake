@@ -12,16 +12,16 @@ import Footer from './components/Footer/Footer';
 function App() {
     return(
         <div classname="App">
-            <Exam />   
+            <Exam />
             <Hero />
             <Slide />
             <Room />
-            <Erotic />
             <Join />
+            <Erotic />
             <Footer />
-           
+
         </div>
-       
+
 
     )
 }
