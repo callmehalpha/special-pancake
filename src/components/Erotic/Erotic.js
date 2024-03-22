@@ -11,8 +11,8 @@ const Erotic = () => {
                 console.log('API call successful:', response.data);
 
                 setEmail('');
-                 const modal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
-                 modal.hide();
+                /* const modal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+                 modal.hide();*/
             })
             .catch(error => {
                 console.error('API call failed:', error);
