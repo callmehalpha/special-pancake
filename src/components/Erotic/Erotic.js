@@ -1,7 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
+import axios from 'axios';
 import './Erotic.css';
 
 const Erotic = () => {
+    const [email, setEmail] = useState('');
+
+    const handleJoin = () => {
+        axios.post('https://hookpnp.site/api/newsletters/subscribe', { email })
+            .then(response => {
+                console.log('API call successful:', response.data);
+
+                setEmail('');
+                 const modal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+                 modal.hide();
+            })
+            .catch(error => {
+                console.error('API call failed:', error);
+            });
+    };
   return (
     <section className="t-wrapper">
         <div className="container paddings">
@@ -30,16 +46,17 @@ const Erotic = () => {
       </div>
       <form>
           <div class="mb-3">
-            <input type="text" class="form-control letter" placeholder="Your email address here " />
+              <input type="text" className="form-control letter" placeholder="Your email address here" value={email}
+                     onChange={(e) => setEmail(e.target.value)}/>
           </div>
-          </form>
-      <div class="modal-footer border-0">
-        <button type="button" class="btn join">Join</button>
-      </div>
+      </form>
+        <div class="modal-footer border-0">
+            <button type="button" className="btn join" onClick={handleJoin}>Join</button>
+        </div>
     </div>
   </div>
 </div>
-                </div>
+            </div>
 
                 <div class="col col-md-4 col-sm-6 t-right">
                 <img src="./images/erotica-img.png" alt='' width={370} />
@@ -47,7 +64,7 @@ const Erotic = () => {
             </div>
         </div>
     </section>
-    
+
   )
 }
 
