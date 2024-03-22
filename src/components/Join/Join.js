@@ -1,9 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Join.css';
 
 const Join = () => {
-    const [email, setEmail] = useState('');
-
     return (
         <section className="j-wrapper">
             <div className="container paddings">
@@ -14,9 +12,6 @@ const Join = () => {
                         <br/>
                         <br/>
                         <br/>
-                            <input type="text" className="form-control letter"
-                                   placeholder="Your email address here" value={email}
-                                   onChange={(e) => setEmail(e.target.value)}/>
                         <button className="j-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Join waiting
                             list
                         </button>
