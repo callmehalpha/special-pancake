@@ -14,7 +14,7 @@ const Exam = () => {
           alert('Thanks for joining')
         })
         .catch(error => {
-          console.error('API call failed:', error.response.data);
+          console.error('API call failed:', error.response);
         });
   };
 
